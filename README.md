@@ -45,30 +45,30 @@ print(mendelejew_cipher('algorytmion'))
 
 `cipher_word(word: str) -> str | None`
 
-### Description
+#### Description
 Encrypts a single word into a sequence of **atomic numbers** based on valid element symbols.
 
-## Parameters 
+#### Parameters 
 - `word (str)`: word to encrypt
 
-### Returs
+#### Returs
 - `list[str]`: list of atomic numbers representing the word
 - `None`: if encryption is impossible
 
-### Details
+#### Details
 Uses a recursive approach to check both one-letter and two-letter element symbols.
 For example, the word `"NoS"` is matched as `["N", "O", "S"] → [7, 8, 16]`.
 
 `mendelejew_cipher(message: str) -> str`
 
-### Description
+#### Description
 Encrypts a full message by converting each word into atomic number sequences.
 Words are separated by `**`, and atomic numbers within a word by `*`.
 
-### Parameters
+#### Parameters
 - `message (str)`: input text containing words to encrypt
 
-### Returs
+#### Returs
 - `str`: encrypted message as atomic number sequence
 - Error message if any word cannot be encoded
 
